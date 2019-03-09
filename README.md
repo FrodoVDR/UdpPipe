@@ -22,13 +22,16 @@ udppipe-client.service is for the tail computer on the internet.
 In the sample folder you will find examples of the head or tail configuration which must be copied to /etc.
 
 Next step clone this git:
+
 cd /usr/local
 git clone "this git"
 
 On the server at home:
+
 cp /usr/local/UdpPipe/sample/server/udppipe.ini /etc
 
 On the client on the internet:
+
 cp /usr/local/UdpPipe/sample/client/udppipe.ini /etc
 
 Change the ini files to the setting you need.
@@ -36,11 +39,13 @@ Change the ini files to the setting you need.
 Next install the systemd services:
 
 At home:
+
 ln /usr/local/UdpPipe/systemd/udppipe-server.service /etc/systemd/system/udppipe-server.service 
 systemctl enable udppipe-server.service
 systemctl start udppipe-server.service
 
 On the Internet:
+
 ln /usr/local/UdpPipe/systemd/udppipe-client.service /etc/systemd/system/udppipe-client.service 
 systemctl enable udppipe-client.service
 systemctl start udppipe-client.service
