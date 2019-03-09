@@ -1,0 +1,20 @@
+# untested, feedback welcomed.
+[Unit]
+Description=UdpPipe - UDP Pipe
+After=network.target
+Requires=network.target
+
+[Service]
+Environment=PYTHONPATH=/usr/local/UdpPipe
+WorkingDirectory=/usr/local/UdpPipe
+ExecStart=/usr/bin/python /usr/local/UdpPipe/eu/liebrand/udppipe/Pipe.py nodaemon -H
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=udppipe
+Type=simple
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
