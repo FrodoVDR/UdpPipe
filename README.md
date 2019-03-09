@@ -51,7 +51,7 @@ systemctl enable udppipe-client.service
 systemctl start udppipe-client.service
 
 You can find more information at
-- c't 6/2018, S. 152: https://www.heise.de/ct/ausgabe/2018-6-Per-UDP-ins-Heimnetz-trotz-CG-NAT-und-DS-Lite-3976627.html
+- c't 6/2018, S. 152: <https://www.heise.de/ct/ausgabe/2018-6-Per-UDP-ins-Heimnetz-trotz-CG-NAT-und-DS-Lite-3976627.html>
 - UdpPipe-Source, udptunnel: http://ct.de/ydk1
 
 Last but not least many thanks to https://github.com/liebrandapps/UdpPipe, unfortunately his website on this topic is no longer available.
