@@ -5,12 +5,12 @@ UdpPipe needs more packages than Python 2.7. We show what to install using the e
 of a Raspberry Pi installation with Debian Jessie (Raspbian). First the package python-dev
 has to be installed to get the necessary Python extensions later:
 
-sudo apt-get install python-dev python-pip openssl git
+```sudo apt-get install python-dev python-pip openssl git```
 
 Simply ignore apt-get's comment if the other packages are already on board.
 Once apt-get has run through, use pip to add two Python packages:
 
-pip install daemon-runner pycrypto
+```pip install daemon-runner pycrypto```
 
 If UdpPipe is to forward privileged ports (< 1024), it must run on head under the root account.
 Otherwise, a normal user account is the safer option. 
@@ -23,9 +23,8 @@ In the sample folder you will find examples of the head or tail configuration wh
 
 Next step clone this git:
 
-cd /usr/local
-
-git clone "this git"
+```cd /usr/local
+git clone "this git"```
 
 On the server at home:
 
