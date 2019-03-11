@@ -29,7 +29,7 @@ Next step clone this git:
 
 ```
 cd /usr/local
-git clone "this git"
+git clone https://github.com/FrodoVDR/UdpPipe.git
 ```
 
 On the server at home:
