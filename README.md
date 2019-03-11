@@ -23,9 +23,10 @@ In the sample folder you will find examples of the head or tail configuration wh
 
 Next step clone this git:
 
-```cd /usr/local```
-
-```git clone "this git" ```
+```
+cd /usr/local
+git clone "this git"
+```
 
 On the server at home:
 
@@ -41,19 +42,19 @@ Next install the systemd services:
 
 At home:
 
-```ln /usr/local/UdpPipe/systemd/udppipe-server.service /etc/systemd/system/udppipe-server.service```
-
-```systemctl enable udppipe-server.service```
-
-```systemctl start udppipe-server.service```
+```
+ln /usr/local/UdpPipe/systemd/udppipe-server.service /etc/systemd/system/udppipe-server.service
+systemctl enable udppipe-server.service
+systemctl start udppipe-server.service
+```
 
 On the Internet:
 
-```ln /usr/local/UdpPipe/systemd/udppipe-client.service /etc/systemd/system/udppipe-client.service ```
-
-```systemctl enable udppipe-client.service```
-
-```systemctl start udppipe-client.service```
+```
+ln /usr/local/UdpPipe/systemd/udppipe-client.service /etc/systemd/system/udppipe-client.service
+systemctl enable udppipe-client.service
+systemctl start udppipe-client.service
+```
 
 You can find more information at
 - c't 6/2018, S. 152: <https://www.heise.de/ct/ausgabe/2018-6-Per-UDP-ins-Heimnetz-trotz-CG-NAT-und-DS-Lite-3976627.html>
